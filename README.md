@@ -2,8 +2,6 @@
 
 **DISCLAIMER:** This project is currently under construction.
 
-SmartContract acting as a digital notary for a private blockchain
-
 This module allows to save periodically the HASH of the last block of the private network in a smartcontract of the ma MainNet of Ethereum.
 
 ![Screenshot](https://github.com/vboluda/PrivateChainNotary/blob/master/images/PrivPublicSchema.jpg) 
