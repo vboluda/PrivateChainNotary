@@ -1,0 +1,19 @@
+// solium-disable linebreak-style
+pragma solidity >=0.4.21 <0.6.0;
+import "truffle/Assert.sol";
+import "truffle/DeployedAddresses.sol";
+import "../contracts/Notary.sol";
+
+contract TestNotary{
+    
+    function testManageNotaries() public {
+        
+        Notary notary = Notary(DeployedAddresses.Notary());
+        Assert.equal(notary.checkNotary(0xE0f5206BBD039e7b0592d8918820024e2a7437b9), false, "Non existent address must not have access");
+        notary.addNotary(0x901b1e955c301ede9B9C764927247C35754C95cD);
+        Assert.equal(notary.checkNotary(0x901b1e955c301ede9B9C764927247C35754C95cD), true, "Non existent address must not have access");
+        notary.removeNotary(0x901b1e955c301ede9B9C764927247C35754C95cD);
+        Assert.equal(notary.checkNotary(0x901b1e955c301ede9B9C764927247C35754C95cD), false, "Non existent address must not have access");
+
+    }
+}

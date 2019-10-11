@@ -1,0 +1,30 @@
+{
+  "name": "privatechainnotary",
+  "version": "1.0.0",
+  "description": "Private chain notary on public blockchain",
+  "main": "main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Truffle",
+    "Ethereum",
+    "Solidity",
+    "NodeJS",
+    "Express",
+    "SmartContracts"
+  ],
+  "author": "Vicente Boluda Vias",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "ethereumjs-util": "^6.0.0",
+    "express": "^4.16.3",
+    "truffle-assertions": "^0.7.1",
+    "truffle-contract": "^3.0.6",
+    "web3": "^1.0.0-beta.36"
+  }
+}
