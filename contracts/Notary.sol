@@ -3,7 +3,7 @@ pragma solidity >=0.4.21 <0.6.0;
 
 contract Notary {
     address public owner;
-    //address[] public notaries cambiar por mapping para facilitar su encuentro. incluir un campo de borrado logico;
+    //address[] public notaries change to mapping to allow logical deletion
     mapping(address => bool) notaries;
         
     struct Validation{
